@@ -834,7 +834,7 @@ SENSORS: dict[str, tuple[TuyaSensorEntityDescription, ...]] = {
         ),
         TuyaSensorEntityDescription(
             key=DPCode.TOTAL_CLEAN_AREA,
-            name="Total Cleaning Area",
+            name="Total cleaning area",
             icon="mdi:texture-box",
             state_class=SensorStateClass.TOTAL_INCREASING,
         ),
@@ -1015,6 +1015,9 @@ SENSORS: dict[str, tuple[TuyaSensorEntityDescription, ...]] = {
             state_class=SensorStateClass.MEASUREMENT,
         ),
     ),
+    # Smart Water Timer
+    # UNDOCUMENTED
+    "ggq": (*BATTERY_SENSORS,),
 }
 
 # Socket (duplicate of `kg`)
